@@ -1,0 +1,379 @@
+body{	
+    font-style: normal;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a{
+	text-decoration: none;
+}
+
+@font-face {
+  	font-family: 'ChronicleDisplay-Black';
+  	src: 	url('/especiales/ficcion-breve/fonts/ChronicleDisplay-Black.eot?#iefix') format('embedded-opentype'),  
+  			url('/especiales/ficcion-breve/fonts/ChronicleDisplay-Black.otf')  format('opentype'),
+	    	url('/especiales/ficcion-breve/fonts/ChronicleDisplay-Black.woff') format('woff'), 
+	    	url('/especiales/ficcion-breve/fonts/ChronicleDisplay-Black.ttf')  format('truetype'), 
+	    	url('/especiales/ficcion-breve/fonts/ChronicleDisplay-Black.svg#ChronicleDisplay-Black') format('svg');
+}
+
+@font-face {
+  	font-family: 'ChronicleDisplay-BlackItalic';
+  	src: 	url('/especiales/ficcion-breve/fonts/ChronicleDisplay-BlackItalic.eot?#iefix') format('embedded-opentype'),  
+  			url('/especiales/ficcion-breve/fonts/ChronicleDisplay-BlackItalic.otf')  format('opentype'),
+	     	url('/especiales/ficcion-breve/fonts/ChronicleDisplay-BlackItalic.woff') format('woff'), 
+	     	url('/especiales/ficcion-breve/fonts/ChronicleDisplay-BlackItalic.ttf')  format('truetype'), 
+	     	url('/especiales/ficcion-breve/fonts/ChronicleDisplay-BlackItalic.svg#ChronicleDisplay-BlackItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'actobook';
+    src: 	url('/especiales/ficcion-breve/fonts/acto-book-webfont.woff2') format('woff2'),
+         	url('/especiales/ficcion-breve/fonts/acto-book-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'actomedium';
+    src: 	url('/especiales/ficcion-breve/fonts/acto-medium-webfont.woff2') format('woff2'),
+         	url('/especiales/ficcion-breve/fonts/acto-medium-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'actobold';
+    src: 	url('/especiales/ficcion-breve/fonts/acto-bold-webfont.woff2') format('woff2'),
+         	url('/especiales/ficcion-breve/fonts/acto-bold-webfont.woff') format('woff');
+}
+
+
+
+
+
+.clear{
+    clear: both;
+}
+
+#header{
+    width: 100%;
+}
+    .header-comercio{   
+        background: #000;        
+        padding: 10px 0 10px;  
+        position: relative;
+        z-index: 9999999;
+    }
+        .ctn-header-comercio{
+            margin: 0 auto;     
+            max-width: 970px;
+        }
+            .ctn-header-comercio a{
+                display: inline-block;                
+                text-indent: -9999px;
+            }
+                a.logo-comercio{
+                    background: url(/especiales/ficcion-breve/img/logo-comercio.png) no-repeat 0 0;
+                    background-size: 100%;
+                    height: 30px;
+                    width: 190px;
+                }
+                #social{
+                        float: right;
+                        top: -4px;
+                        position: relative;
+                }
+                    #social ul{
+                        display: inline-block;
+                        margin: 0 auto;
+                        padding: 0;
+                        vertical-align: middle;
+                    }
+                        #social ul li{
+                            display: inline-block;
+                            margin: 0 3px;
+                            vertical-align: middle;
+                        }
+                            #social ul li a{
+                                height: 36px;
+                                width: 36px;
+                            }
+                                #social ul li a.facebook{
+                                    background: url(/especiales/ficcion-breve/img/sprite-redes.png) no-repeat 0 0;  
+                                    background-size: 75px;                         
+                                }
+                                #social ul li a.tw{
+                                    background: url(/especiales/ficcion-breve/img/sprite-redes.png) no-repeat -37px 0;  
+                                    background-size: 75px;                         
+                                }
+
+header{
+	text-align: center;
+}
+	header h1{
+		font: 50px/45px 'ChronicleDisplay-Black';
+		margin: 50px auto 10px;	
+		text-transform: uppercase;
+	}
+
+    header h1 a{
+        color: black;
+        cursor: pointer;
+	}
+
+	header h2{
+		font: 24px/28px 'actomedium';
+		margin: 0 auto 24px;
+	}
+		header h2 span{
+			font-family: 'actobold';
+		}
+	header span.linea-header{
+		background: #000;
+		display: block;
+		height: 2px;
+		margin: 0 auto;
+		width: 42px;
+	}
+
+.main{
+	margin: 40px auto 20px;
+	max-width: 1000px;
+}
+	.box-previo-cuento{
+		display: inline-block;
+		margin: 0 5px 40px;
+		max-width: 320px;
+		vertical-align: top;
+	}
+		.box-previo-cuento span,
+		.box-cuento span{
+			display: block;
+			font: 42px/48px 'ChronicleDisplay-Black';
+		}
+		.box-bg-previo{
+			overflow: hidden;
+			position: relative;
+		}
+			.mas{
+				background: url(/especiales/ficcion-breve/img/mas-icon.png) no-repeat;
+				background-size: 100%;
+				height: 50px;
+				left: 50%;
+				margin-left: -25px;
+				position: absolute;
+				bottom: -30%;
+				width: 50px;
+				z-index: 10;
+			}
+			.box-bg-previo img{
+				cursor: pointer;
+
+				-webkit-filter: grayscale(100%);
+			    -webkit-transition: .5s ease-in-out;
+			    -moz-filter: grayscale(100%); 
+			    -moz-transition: .5s ease-in-out;
+			    -o-filter: grayscale(100%); 
+			    -o-transition: .5s ease-in-out;
+			    filter: grayscale(100%);
+			}
+				.box-bg-previo:hover img{
+					-webkit-filter: grayscale(0%);
+			        -webkit-transition: .5s ease-in-out;
+			        -moz-filter: grayscale(0%);
+			        -moz-transition: .5s ease-in-out;
+			        -o-filter: grayscale(0%);
+			        -o-transition: .5s ease-in-out;
+			        filter: grayscale(0%);
+				}
+				.box-bg-previo:hover .mas{					
+					bottom: 35%;
+
+					-webkit-transition: all 0.3s ease-in-out;
+           	 		-moz-transition: all 0.3s ease-in-out;
+            		-o-transition: all 0.3s ease-in-out;
+            		transition: all 0.3s ease-in-out;           
+				}
+		.box-info-previo{
+			color: #000;
+			margin: 10px auto;
+		}
+			.box-info-previo span.separador{
+				background: #000;
+				display: block;
+				height: 1px;
+				width: 42px;
+			}
+			.box-info-previo h5{
+                font: 13px/15px 'actobook';
+                margin: 8px auto 8px;
+			}
+			.box-info-previo h3{
+				font: 22px/24px 'ChronicleDisplay-BlackItalic';
+				margin: 0 auto 10px;
+			}
+				.box-info-previo h3 a{
+					color: #000;
+					text-decoration: none;
+				}
+					.box-info-previo h3 a:hover{
+						text-decoration: underline;
+					}
+			.box-info-previo h4{
+				color: #4c4b4b;
+				font: 16px/16px 'actobook';
+				margin: 0 auto 15px;
+			}
+			.box-info-previo h6{
+				color: #4c4b4b;
+				font: 13px/10px 'actobook';
+                font-style: italic;
+				margin: 0 auto 15px;
+			}
+
+		.box-cuento{
+			margin: 0 auto;
+			max-width: 660px;
+		}
+			.box-cuento p{
+				font: 21px/32px 'actobook';	
+				margin-bottom: 50px;			
+			}
+
+		.link{
+			border: 1px solid #000;	
+			margin-bottom: 30px;		
+			padding: 5px;
+			text-align: right;
+			width: 235px;
+		}
+
+		.link-indice{
+			/*border: 1px solid #000;	*/
+			margin-bottom: 0px;		
+			padding: 5px;
+			text-align: center;
+			width: 100%;
+		}
+
+        .link-indice.center {
+            font: 18px/32px 'actobook';
+            color: black;
+            text-decoration: underline;
+            margin-bottom: 5px;
+        }
+
+
+			.link span,
+			.link span a{
+				color: #000;
+				font: 22px/24px 'ChronicleDisplay-BlackItalic';
+				text-align: left;
+			}
+			.link i{
+				background-size: 100%;
+				display: inline-block;
+				height: 15px;
+				vertical-align: top;
+				width: 21px;		    
+			}
+				.izq{
+					float: left;
+					text-align: left;
+				}
+
+				.center{
+					float: left;
+					text-align: center;
+				}
+				.izq span,
+				.izq span.titulo{
+					text-align: right;
+				}
+				.izq i{
+					background: url(/especiales/ficcion-breve/img/izq.png);	
+					background-size: 100%;				
+				}
+
+				.der{
+					float: right;
+				}
+				.der i{
+					background: url(/especiales/ficcion-breve/img/der.png);	
+					background-size: 100%;				
+				}
+			.link:hover{
+				background: #000;				
+			}
+				.link:hover span{
+					color: #fff;
+				}
+
+
+
+
+@media screen and (max-width: 1366px) {
+
+
+@media screen and (max-width: 1280px) {
+
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 640px) {    
+    header h1 {    
+        font: 38px/48px 'ChronicleDisplay-Black';
+    }
+    header h2 {
+        font: 20px/28px 'actomedium';
+        margin: 0px 4px;
+    }
+    .box-previo-cuento {
+        max-width: 100%;
+    }
+    .box-cuento {
+        padding: 15px;
+    }
+    .link {
+        width: 96%;
+    }
+}
+    
+
+@media screen and (max-width: 480px) {
+  
+}
+
+@media screen and (max-width: 375px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+/** monitor Comercio **/
+@media only screen and (min-height: 900px) {
+
+}
+
+/** monitor 768px alto **/
+@media only screen and (min-height: 760px) {
+ 
+}
+
+/** monitor 900px alto **/
+@media only screen and (min-height: 1024px) {
+
+}
+
+/** monitor 1024px alto **/
+@media only screen and (min-height: 1024px) {   
+
+}
